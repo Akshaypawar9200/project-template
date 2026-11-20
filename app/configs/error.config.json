@@ -1,0 +1,4 @@
+{
+  "ERR_API_NOT_FOUND": "Given API route not defined.",
+  "ERR_ITEM_NOT_FOUND": "Item not found"
+}

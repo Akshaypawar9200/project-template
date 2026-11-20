@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "route": "/api/v1/ping",
+      "method": "GET",
+      "controller": "../components/ping/controllers/ping-controller.js",
+      "secured": false,
+      "middlewareNameList": [
+        "validateJWTOptional"
+      ]
+    },
+    {
+      "route": "/api/v1/ping/secured",
+      "method": "GET",
+      "action": "pingSecured",
+      "controller": "../components/ping/controllers/ping-controller.js",
+      "permissions": [
+        "ping:view"
+      ]
+    }
+  ]
+}
